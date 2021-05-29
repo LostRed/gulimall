@@ -2,18 +2,18 @@ package com.atguigu.gulimall.product.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
+import java.io.Serializable;
 import java.util.Date;
+import lombok.Data;
 
 /**
  * spu信息
- *
+ * 
  * @author lostred
  * @email lostred@outlook.com
- * @date 2021-05-16 17:52:05
+ * @date 2021-05-29 17:57:17
  */
 @Data
 @TableName("pms_spu_info")
@@ -42,7 +42,7 @@ public class SpuInfoEntity implements Serializable {
 	 */
 	private Long brandId;
 	/**
-	 *
+	 * 
 	 */
 	private BigDecimal weight;
 	/**
@@ -50,11 +50,11 @@ public class SpuInfoEntity implements Serializable {
 	 */
 	private Integer publishStatus;
 	/**
-	 *
+	 * 
 	 */
 	private Date createTime;
 	/**
-	 *
+	 * 
 	 */
 	private Date updateTime;
 

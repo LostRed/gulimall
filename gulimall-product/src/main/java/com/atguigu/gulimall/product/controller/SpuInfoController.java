@@ -22,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author lostred
  * @email lostred@outlook.com
- * @date 2021-05-16 17:52:05
+ * @date 2021-05-29 17:57:17
  */
 @RestController
 @RequestMapping("product/spuinfo")

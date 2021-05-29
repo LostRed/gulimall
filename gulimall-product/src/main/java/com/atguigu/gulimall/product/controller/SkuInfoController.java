@@ -1,14 +1,19 @@
 package com.atguigu.gulimall.product.controller;
 
-import com.atguigu.common.utils.PageUtils;
-import com.atguigu.common.utils.R;
-import com.atguigu.gulimall.product.entity.SkuInfoEntity;
-import com.atguigu.gulimall.product.service.SkuInfoService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.Arrays;
 import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.atguigu.gulimall.product.entity.SkuInfoEntity;
+import com.atguigu.gulimall.product.service.SkuInfoService;
+import com.atguigu.common.utils.PageUtils;
+import com.atguigu.common.utils.R;
 
 
 
@@ -17,7 +22,7 @@ import java.util.Map;
  *
  * @author lostred
  * @email lostred@outlook.com
- * @date 2021-05-16 17:52:05
+ * @date 2021-05-29 17:57:17
  */
 @RestController
 @RequestMapping("product/skuinfo")
