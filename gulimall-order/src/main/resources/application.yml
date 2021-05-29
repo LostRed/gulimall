@@ -2,12 +2,15 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://192.168.80.103:3306/gulimall_oms
+    url: jdbc:mysql://192.168.1.103:3306/gulimall_oms
     driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
+    loadbalancer:
+      cache:
+        enabled: false
   application:
     name: gulimall-order
 
