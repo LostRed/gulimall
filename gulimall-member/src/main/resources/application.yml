@@ -1,24 +1,26 @@
-spring:
-  datasource:
-    username: root
-    password: 123456
-    url: jdbc:mysql://192.168.1.103:3306/gulimall_ums
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-    loadbalancer:
-      cache:
-        enabled: false
-  application:
-    name: gulimall-member
-
-mybatis-plus:
-  mapper-locations: classpath:/mapper/**/*.xml
-  global-config:
-    db-config:
-      id-type: auto
-
-server:
-  port: 8000
+#server:
+#  port: 8000
+#spring:
+#  application:
+#    name: gulimall-member
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#        namespace: public
+#        group: dev
+#    loadbalancer:
+#      cache:
+#        enabled: false
+#
+#  datasource:
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://192.168.1.103:3306/gulimall_ums
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
