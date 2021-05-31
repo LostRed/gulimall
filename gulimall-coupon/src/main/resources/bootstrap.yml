@@ -15,6 +15,3 @@ spring:
           - data-id: mybatis.yml
             group: dev
             refresh: false
-          - data-id: application.yml
-            group: dev
-            refresh: false

@@ -1,8 +1,6 @@
 #server:
 #  port: 88
 #spring:
-#  application:
-#    name: gulimall-gateway
 #  cloud:
 #    nacos:
 #      discovery:
@@ -15,10 +13,26 @@
 #    gateway:
 #      routes:
 #        - id: coupon
-#          uri: http://localhost:7000
+#          uri: lb://gulimall-coupon
 #          predicates:
-#            - Path=/coupon/**
+#            - Path=/api/coupon/**
+#          filters:
+#            - RewritePath=/api/?(?<segment>.*), /$\{segment}
 #        - id: member
-#          uri: http://localhost:8000
+#          uri: lb://gulimall-member
 #          predicates:
-#            - Path=/member/**
+#            - Path=/api/member/**
+#          filters:
+#            - RewritePath=/api/?(?<segment>.*), /$\{segment}
+#        - id: product
+#          uri: lb://gulimall-product
+#          predicates:
+#            - Path=/api/product/**
+#          filters:
+#            - RewritePath=/api/?(?<segment>.*), /$\{segment}
+#        - id: renren-fast
+#          uri: lb://renren-fast
+#          predicates:
+#            - Path=/api/**
+#          filters:
+#            - RewritePath=/api/?(?<segment>.*), /renren-fast/$\{segment}

@@ -1,11 +1,11 @@
 spring:
   application:
-    name: gulimall-member
+    name: gulimall-product
   cloud:
     nacos:
       config:
         server-addr: localhost:8848
-        namespace: member
+        namespace: product
         group: dev
         file-extension: yml
         extension-configs:
@@ -13,5 +13,8 @@ spring:
             group: dev
             refresh: false
           - data-id: mybatis.yml
+            group: dev
+            refresh: false
+          - data-id: log.yml
             group: dev
             refresh: false
